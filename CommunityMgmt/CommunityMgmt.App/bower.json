@@ -1,0 +1,20 @@
+{
+    "name": "ShortClick",
+    "version" : "0.0.0",
+  "dependencies": {
+    "angular": "1.4.4",   
+    "angular-ui-router": "0.2.15",
+    "angular-translate": "2.2.0",
+    "ngstorage": "0.3.0",
+    "lodash": "2.4.1" ,
+    "prettyprint":""  ,
+    "angular-sanitize": "1.3.9",
+    "angular-animate": "1.4.4",
+    "angular-aria": "1.4.4",
+    "angular-material": "0.11.0",
+    "angular-material-icons" : "0.6.0"
+  },
+  "resolutions": {
+    "angular": "1.4.4"
+  }
+}
