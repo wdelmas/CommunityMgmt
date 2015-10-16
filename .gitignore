@@ -1,0 +1,5 @@
+CommunityMgmt/CommunityMgmt.App/gulp/node_modules/*
+CommunityMgmt/CommunityMgmt.App/bower_components/*
+CommunityMgmt/CommunityMgmt.App/bin/*
+CommunityMgmt/CommunityMgmt.App/build/*
+CommunityMgmt/packages/*
