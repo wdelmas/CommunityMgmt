@@ -18,7 +18,7 @@ namespace CommunityMgmt.App.Controllers
             return PartialView();
         }
 
-        public JsonResult GetData()
+        public JsonResult Data()
         {
           
             var rssFeed = new Uri("https://techblog.betclicgroup.com/feed/");
@@ -36,12 +36,13 @@ namespace CommunityMgmt.App.Controllers
             var links = (from p in document.Descendants("item")
                          select new
                          {
+                             Who = rssFeed,
                              Title = p.Element("title").Value,
                              Link = p.Element("link").Value,
                              Comments = p.Element("comments").Value,
                              PubDate = DateTime.Parse(p.Element("pubDate").Value),
                              Description = p.Element("description").Value,
-                             Content = FetchLinksFromSource(p.Elements().Where(r => r.Name.ToString().Contains("content")).FirstOrDefault().Value)
+                             Img = FetchLinksFromSource(p.Elements().Where(r => r.Name.ToString().Contains("content")).FirstOrDefault().Value)
                          }).ToList();
             return Json(links, JsonRequestBehavior.AllowGet);
         }

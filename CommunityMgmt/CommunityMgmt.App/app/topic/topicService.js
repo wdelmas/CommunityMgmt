@@ -6,14 +6,14 @@
     var tokenName = 'ngStorage-tokens';
 
     /** @ngInject */
-    function topicService($rootScope, $q) {
+    function topicService($rootScope, $q,$http) {
 
         return {
             get: getAll
         };
 
         function getAll() {
-
+            return $http.get('topic/data')
         }
     }
 })();

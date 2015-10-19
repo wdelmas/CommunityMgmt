@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 
 var paths = {
     src: [
-        '../css/*.css',
+        '../Content/*.css',
         '../bower_components/angular-material/angular-material.min.css',
          '../bower_components/angular-material-icons/angular-material-icons.css'
     ],

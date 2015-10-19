@@ -1,24 +1,50 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿md-content.md-default-theme {
+    background-color: #eee;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+md-card {
+    background-color: #fff;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+    md-card h2:first-of-type {
+        margin-top: 0;
+    }
+
+md-toolbar .md-button.md-default-theme {
+    border-radius: 99%;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+h2 {
+    font-weight: 400;
+}
+
+.md-toolbar-tools-bottom {
+    font-size: small;
+}
+
+    .md-toolbar-tools-bottom :last-child {
+        opacity: 0.8;
+    }
+
+md-toolbar:not(.md-hue-1),
+.md-fab {
+    fill: #fff;
+}
+
+md-sidenav {
+    fill: #737373;
+}
+
+    md-sidenav ng-md-icon {
+        position: relative;
+        top: 5px;
+    }
+
+.user-avatar {
+    border-radius: 99%;
+}
+
+.md-avatar {
+    border-radius: 25% !important;
+    margin-top: 25px !important;
 }
