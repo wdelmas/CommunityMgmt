@@ -2,13 +2,26 @@
 <html ng-app="CmtMgmt">
 <head>
     <meta charset="utf-8" />
-    <title>Chrome Extension test page</title>
+    <title>Community management</title>
     <link rel="stylesheet" type="text/css" charset="ISO-8859-1" href="build/CmtMgmt.css">
 </head>
 <body>
-    <div class="body">
-      @RenderBody()
+<div class="body">
+    <div class="md-toolbar-tools theme-color">
+        <h3>
+            Community Management
+        </h3>
+        <span flex=""></span>
+        <button class="md-button md-default-theme" aria-label="Search" tabindex="0">
+            <ng-md-icon icon="search" class="ng-scope"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></ng-md-icon>
+        </button>
+        <button class="md-button md-default-theme" aria-label="Open Settings" tabindex="0">
+            <ng-md-icon icon="more_vert" class="ng-scope"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path><path d="M12 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path><path d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg></ng-md-icon>
+        </button>
     </div>
+
+    @RenderBody()
+</div>
     <script type="text/javascript" charset="ISO-8859-1" src="build/CmtMgmt.libs.js"></script>
     <script type="text/javascript" charset="ISO-8859-1" src="build/CmtMgmt.app.js"></script>
     <script type="text/javascript" charset="ISO-8859-1" src="bower_components/angular-material/angular-material.min.js"></script>

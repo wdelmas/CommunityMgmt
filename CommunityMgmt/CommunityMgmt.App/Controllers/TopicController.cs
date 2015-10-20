@@ -39,9 +39,11 @@ namespace CommunityMgmt.App.Controllers
                              Who = rssFeed,
                              Title = p.Element("title").Value,
                              Link = p.Element("link").Value,
-                             Comments = p.Element("comments").Value,
                              PubDate = DateTime.Parse(p.Element("pubDate").Value),
                              Description = p.Element("description").Value,
+                             Creator = p.Elements().Where(r => r.Name.ToString().Contains("creator")).FirstOrDefault().Value,
+                             Tags = p.Elements().Where(r => r.Name.ToString().Contains("category")).Select( r => r.Value
+                             ).ToList(),
                              Img = FetchLinksFromSource(p.Elements().Where(r => r.Name.ToString().Contains("content")).FirstOrDefault().Value)
                          }).ToList();
             return Json(links, JsonRequestBehavior.AllowGet);

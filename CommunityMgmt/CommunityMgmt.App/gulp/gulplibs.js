@@ -14,7 +14,9 @@ var paths = {
         //'../bower_components/prettyprint/prettyprint.js',
         '../bower_components/angular-sanitize/angular-sanitize.min.js',
         '../bower_components/angular-animate/angular-animate.min.js',
+        '../bower_components/moment/min/moment.min.js',
         '../bower_components/angular-aria/angular-aria.min.js',
+
         '../bower_components/angular-material-icons/angular-material-icons.min.js'
     ],
     dest: '../build/'

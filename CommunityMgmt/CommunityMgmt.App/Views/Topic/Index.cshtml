@@ -1,34 +1,45 @@
 ﻿<md-content>
-    <div layout="row" layout-align="center center" >
+    <div layout="row" layout-align="center center" style="min-width: 1000px;">
         <md-card flex-gt-sm="90" flex-gt-md="80">
             <md-card-content>
                 <md-list>
-                    <h2>Topics</h2>
-
-                    <md-subheader class="md-no-sticky">Techblog betclic</md-subheader>
                     <div layout="row" layout-sm="column" layout-align="space-around">
-                        <md-progress-circular md-mode="indeterminate" ng-if="topics.length == 0"></md-progress-circular>
+                        <md-progress-circular class="theme-topic-title" md-mode="indeterminate" ng-if="topics.length == 0"></md-progress-circular>
                     </div>
                     <md-list-item class="md-3-line" ng-repeat="item in topics" ng-if="topics.length != 0">
-                        <img ng-src="{{item.Img[0]}}?{{$index}}" class="md-avatar" alt="{{item.who}}" style="width: 125px;
-                                      height: auto;"
+                        <img ng-src="{{item.Img[0]}}?{{$index}}" class="md-avatar" alt="{{item.who}}" style="width: 105px;
+                                      height: auto;    margin-top: 37px!important;"
                              ng-click="displayImg(item,$event)" />
                         <div class="md-list-item-text" layout="column">
-                            <h2>{{::item.Title }}</h2>
-                            <p style="max-width: 90%">{{::item.Description }}</p>
+                            <h2 class="theme-topic-title " style="-webkit-margin-after: 0.1em!important;font-size: 1.3em;">{{::item.Title }}</h2>
+                            <h4>by {{::item.Creator }} at {{item.PubDate | momentFormat:'M/D/YYYY h:m A'}}</h4>
+
+                            <p layout="row">
+                                <md-chips ng-repeat="tag in item.Tags">
+                                    <md-chip class="theme-color">{{tag}}</md-chip>
+                                </md-chips>
+                            </p>
+
                             <a href="{{::item.Link}}" target="_blank">
-                                <ng-md-icon icon="open_in_browser" size="25" style="color: rgb(144,229,252);" class="md-secondary md-hue-3 md-primary"></ng-md-icon>
+                                <ng-md-icon icon="open_in_browser" size="25" class="theme-font md-secondary md-hue-3 md-primary"></ng-md-icon>
                             </a>
                             <md-divider></md-divider>
                         </div>
                     </md-list-item>
 
                 </md-list>
-                <md-item layout class="inset">
-                    <md-button layout layout-align="start center" flex class="md-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" /></svg> More
+
+                <div layout="row" layout-align="center center">
+
+                    <md-button class="md-fab theme-sub-color" aria-label="Add rule ">
+                        <ng-md-icon icon="add" size="25"></ng-md-icon>
+                        <md-tooltip>
+                            More
+                        </md-tooltip>
                     </md-button>
-                </md-item>
+
+                </div>
+
             </md-card-content>
         </md-card>
     </div>

@@ -132,6 +132,7 @@
     <Content Include="app\app.route.js" />
     <Content Include="app\app.run.js" />
     <Content Include="app\common\constant.js" />
+    <Content Include="app\common\filter.js" />
     <Content Include="app\topic\topicService.js" />
     <Content Include="app\topic\topicCtrl.js" />
     <Content Include="favicon.ico" />
@@ -145,6 +146,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="gulp\package.json" />
+    <Content Include="bower.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

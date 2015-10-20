@@ -1,50 +1,39 @@
-﻿md-content.md-default-theme {
-    background-color: #eee;
+﻿
+body {
+    background-color: #ecf0f1 !important;
 }
 
-md-card {
-    background-color: #fff;
-}
-
-    md-card h2:first-of-type {
-        margin-top: 0;
-    }
-
-md-toolbar .md-button.md-default-theme {
-    border-radius: 99%;
-}
-
-h2 {
-    font-weight: 400;
-}
-
-.md-toolbar-tools-bottom {
-    font-size: small;
-}
-
-    .md-toolbar-tools-bottom :last-child {
-        opacity: 0.8;
-    }
-
-md-toolbar:not(.md-hue-1),
-.md-fab {
-    fill: #fff;
-}
-
-md-sidenav {
-    fill: #737373;
-}
-
-    md-sidenav ng-md-icon {
-        position: relative;
-        top: 5px;
-    }
-
-.user-avatar {
-    border-radius: 99%;
+md-content.md-default-theme {
+    background-color: #ecf0f1;
 }
 
 .md-avatar {
     border-radius: 25% !important;
     margin-top: 25px !important;
+}
+
+md-chips .md-chips {
+    box-shadow: none;
+}
+
+.theme-color {
+    background: #16a085 !important;
+    color: white !important;
+}
+
+.theme-sub-color {
+    background: #2980b9 !important;
+    color: white !important;
+}
+
+.theme-font {
+    color: #16a085 !important;
+}
+
+.theme-title {
+    color: #9b59b6 !important;
+}
+
+.theme-topic-title {
+    color: #2980b9;
 }

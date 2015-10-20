@@ -2,7 +2,8 @@
     'use strict';
     angular.
         module('CmtMgmt')
-        .value('chrome', window.chrome);
+        .value('chrome', window.chrome)
+     .value('moment', window.moment);
 
     angular
 		.module('CmtMgmt')
@@ -17,5 +18,7 @@
            profileLoaded: 'profileLoaded',
            openMenu: 'openMenu'
        });
+
+
 
 })();
